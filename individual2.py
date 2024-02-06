@@ -3,10 +3,10 @@
 
 from datetime import datetime
 import sys
-from workers import add
-from workers import workers
-from workers import phone
-from workers import instruction
+from module2 import add
+from module2 import workers
+from module2 import phone
+from module2 import instruction
 
 
 def main():
