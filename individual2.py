@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from datetime import datetime
 import sys
-from module2 import add
-from module2 import workers
-from module2 import phone
-from module2 import instruction
+from module2 import *
 
 
 def main():
-    sample = ['surname', 'name', 'phone', 'date']
     lst = []
 
     # ввод данных
@@ -23,13 +18,13 @@ def main():
             case 'exit':
                 break
             case 'add':
-                add(lst)
+                add.add(lst)
             case 'phone':
-                phone(lst)
+                phone.phone(lst)
             case 'help':
-                instruction()
+                instructions.instruction()
             case 'list':
-                workers(lst)
+                list_workers.workers(lst)
             case _:
                 print(f"Неизвестная команда {command}", file=sys.stderr)
 
